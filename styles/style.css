@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+}
+
+body{
+    font-family:arial;
+    font-size:13px;
+    line-height:1.5em;
+    color:#fff;
+    background: url(../images/background.jpg);
+}
+
+.clear-fix{
+    clear:both;
+}
+
+#container{
+    width:500px;
+    min-height:500px;
+    background:#333;
+    overflow:hidden;
+    margin:60px auto;
+    -moz-border-radius:10px;
+    -webkit-border-radius:10px;
+    border-radius:10px;
+    border:#666 solid 2px;
+}
+
+#audio-info{
+    text-align:center;
+    margin: 1% 0 5% 0;
+}
+
+#audio-info .artist{
+    font-weight:bold;
+}
+
+.cover{
+    width:100%;
+    z-index:1;
+}
+
+input#volume {
+    width:95%;
+    margin-top: 3%;
+    margin-left:2%;
+    -webkit-appearance: none !important;
+    background:#ccc;
+    height:1px;
+    margin-bottom:20px;
+}
+input#volume::-webkit-slider-thumb {
+    -webkit-appearance: none !important;
+    background:url(../images/menu.png) no-repeat;
+    height:32px;
+    width:32px;
+}
+
+#audio-buttons{
+    width:90%;
+    display: block;
+    margin: 0px auto auto 23px;
+}
+button#play:hover button#stop:hover
+{
+    opacity: 0.2;
+}
+button#play{
+    width:70px;
+    height:70px;
+    background:url(../images/play.png) no-repeat;float:left;
+    margin-left: 30px;
+}
+
+button#pause{
+    width:70px;
+    height:70px;
+    background:url(../images/pause.png) no-repeat;float:left;
+    margin-left: 30px;
+}
+
+button#stop{
+    width:70px;
+    height:70px;
+    background:url(../images/stop.png) no-repeat;float:left;
+    margin-left: 30px;
+}
+
+button#prev{
+    width:70px;
+    height:70px;
+    background:url(../images/prev.png) no-repeat;
+    float:left;
+    margin-left: 40px;
+}
+
+button#next{
+    width:70px;
+    height:70px;
+    background:url(../images/next.png) no-repeat;
+    float:left;
+    margin: 0 30px 0 30px;
+}
+
+#play-list {
+    list-style-type: none;
+    padding:10px;
+}
+
+#play-list li {
+    cursor: pointer;
+    margin:5px;
+}
+
+#tracker{
+    position:relative;
+    width:100%;
+}
+
+#play-list li.active {
+    font-weight: bold;
+    padding:3px;
+    background:rgba(255,107,90,0.8);
+    color: #0f0f0f;
+}
+
+#duration{
+    position:absolute;
+    top:0;
+    right:10px;
+    padding:4px 8px;
+    background:#000;
+    border-radius:5px;
+    margin-top: -4px;
+}
+
+.progress{
+    width: 85%;
+    padding:0;
+    margin: 13px 0 0 15px;
+}
+#file-select{
+}
+

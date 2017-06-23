@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AudioPlayer</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+<svript src="bootstrap/js/bootstrap.js"></svript>
+<div id="container">
+    <div id="audio-player">
+        <div id="audio-info">
+            <span class="artist"></span> - <span class="title"></span>
+        </div>
+        <input id="volume" type="range" min="0" max="200" value="100">
+        <div id="audio-buttons">
+            <button id="prev"></button>
+            <button id="play"></button>
+            <button id="pause"></button>
+            <button id="stop"></button>
+            <button id="next"></button>
+        </div>
+        <div class="clear-fix"></div>
+        <div id="tracker">
+            <div id="my-progress" class="progress">
+                <div id="my-bar" class="progress-bar progress-bar-danger progress-bar-striped active" role="progressbar"
+                     aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                    <label id="label-bar" for="my-bar"></label>
+                </div>
+            </div>
+            <span id="duration"></span>
+        </div>
+        <div class="clear-fix"></div>
+        <ul id="play-list">
+            <li song="Going Higher" artist="BenSound FREE">BenSound FREE - Going Higher</li>
+            <li song="Energy" artist="BenSound FREE">BenSound FREE - Energy</li>
+            <li song="Memories" artist="BenSound FREE">BenSound FREE - Memories</li>
+            <li song="Better Days" artist="BenSound FREE">BenSound FREE - Better Days</li>
+            <li song="Ukulele" artist="BenSound FREE">BenSound FREE - Ukulele</li>
+            <li song="A New Beginning" artist="BenSound FREE">BenSound FREE - A New Beginning</li>
+            <li song="Happy Rock" artist="BenSound FREE">BenSound FREE - Happy Rock</li>
+            <li song="Jazzy Frenchy" artist="BenSound FREE">BenSound FREE - Jazzy Frenchy</li>
+        </ul>
+    </div>
+</div>
+
+<script src="scripts/jquery-3.2.1.min.js"></script>
+<script src="scripts/script.js"></script>
+</body>
+</html>
