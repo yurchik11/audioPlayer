@@ -18,7 +18,7 @@ body{
 }
 
 #container{
-    width:500px;
+    width:400px;
     min-height:500px;
     background:#333;
     overflow:hidden;
@@ -72,21 +72,21 @@ button#play{
     width:70px;
     height:70px;
     background:url(../images/play.png) no-repeat;float:left;
-    margin-left: 30px;
+    margin-left: 10px;
 }
 
 button#pause{
     width:70px;
     height:70px;
     background:url(../images/pause.png) no-repeat;float:left;
-    margin-left: 30px;
+    margin-left: 10px;
 }
 
 button#stop{
     width:70px;
     height:70px;
     background:url(../images/stop.png) no-repeat;float:left;
-    margin-left: 30px;
+    margin-left: 10px;
 }
 
 button#prev{
@@ -94,7 +94,7 @@ button#prev{
     height:70px;
     background:url(../images/prev.png) no-repeat;
     float:left;
-    margin-left: 40px;
+    margin-left: 20px;
 }
 
 button#next{
@@ -102,7 +102,7 @@ button#next{
     height:70px;
     background:url(../images/next.png) no-repeat;
     float:left;
-    margin: 0 30px 0 30px;
+    margin: 0 20px 0 10px;
 }
 
 #play-list {
@@ -138,10 +138,9 @@ button#next{
 }
 
 .progress{
-    width: 85%;
+    width: 81%;
     padding:0;
     margin: 13px 0 0 15px;
 }
 #file-select{
 }
-
